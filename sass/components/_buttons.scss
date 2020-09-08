@@ -1,0 +1,38 @@
+.btn {
+  background-color: $button-color;
+  border-radius: $button-radius;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  font-family: $button-font;
+  font-size: $button-font-size;
+  padding: 15px 18px;
+  text-decoration: none;
+  border: none;
+  margin: 20px auto;
+}
+
+.btn-load {
+  margin-left: 10px;
+}
+
+.btn-enter {
+  margin-left: 10px;
+  width: 30%;
+  justify-content: center;
+}
+
+.btn-enter:hover {
+  background-color: $button-hover-color;
+  transition: 0.5s;
+}
+
+.btn-add:hover {
+  background-color: $button-hover-color;
+  transition: 0.5s;
+}
+
+.btn-load:hover {
+  background-color: $button-hover-color;
+  transition: 0.5s;
+}

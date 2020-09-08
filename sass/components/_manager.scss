@@ -1,0 +1,38 @@
+.sidebar-manager {
+  border-top: 1px solid $main-color;
+  text-align: left;
+  margin-top: 40px;
+
+  .manager-name {
+    color: $main-color;
+    font-size: 16px;
+    font-family: $paragraph-font;
+    margin: 30px 20px 0 20px;
+  }
+}
+
+.sidebar-manager:hover {
+  background-color: $button-hover-color;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manager-info {
+  display: flex;
+
+  img {
+    display: inline-block;
+    margin: 25px 15px;
+  }
+
+  p {
+    font-family: $paragraph-font;
+    display: block;
+    margin-top: 37px;
+    color: grey;
+  }
+
+  p:hover {
+    color: white;
+  }
+}

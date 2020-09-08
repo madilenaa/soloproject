@@ -1,0 +1,153 @@
+@media (max-width: 900px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+
+    .main-app {
+      margin-top: 55px;
+      padding: 0;
+
+      .period-select {
+        padding: 20px;
+        border-bottom: none;
+
+        input {
+          border: 0.2px solid $border-color;
+        }
+      }
+    }
+  }
+
+  .wrapper .sidebar {
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    transition: 0.5s;
+    height: 100%;
+    transform: translateX(100%);
+
+    .sidebar-manager {
+      width: 100%;
+      border-top: none;
+      margin: 0;
+    }
+
+    .manager-name {
+      margin: 0 15px;
+      color: white;
+    }
+
+    ul li {
+      padding: 12px;
+    }
+
+    .hamburger {
+      display: none;
+    }
+
+    .mobile_sidebar-icons {
+      display: flex;
+      flex-direction: column;
+
+      .nav-icon {
+        border: none;
+      }
+
+      a {
+        color: $main-color;
+        font-size: 15px;
+        font-family: $paragraph-font;
+      }
+    }
+  }
+
+  .wrapper .sidebar.show {
+    transform: translateX(0%);
+  }
+
+  .wrapper .main-content .header {
+    width: 100%;
+    background-color: $button-color;
+    padding: 10px;
+    border: none;
+
+    .nav-icon {
+      display: none;
+    }
+
+    .mobile-topbar {
+      display: flex;
+      color: white;
+      font-family: $logo-font;
+      font-size: 20px;
+      width: 100%;
+      justify-content: space-between;
+
+      i {
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+
+  .wrapper .main-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .wrapper section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .table-values {
+    display: inline;
+  }
+
+  .graph-chart img {
+    width: 90%;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .links-table .table-icons i {
+    opacity: 1;
+    color: orange;
+  }
+}
+
+.modal {
+  height: 100%;
+}
+
+i.icon-arrow-right.show-arrow {
+  visibility: hidden;
+}
+
+@media(max-width: 767px) {
+  @include grid('sm');
+  
+  i.icon-arrow-right.show-arrow {
+    visibility: hidden;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+
+  i.icon-arrow-right.show-arrow {
+    visibility: visible;
+    position: fixed;
+  }
+}
+
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+  @include grid('xl');
+}

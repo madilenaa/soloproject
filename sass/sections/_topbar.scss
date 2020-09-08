@@ -1,0 +1,70 @@
+.wrapper .main-content {
+  width: 100%;
+  margin-left: 200px;
+  transition: 0.5s;
+}
+
+.wrapper .main-content .header {
+  background: white;
+  color: $main-color;
+  border-bottom: 1px solid $border-color;
+  position: fixed;
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+
+  a {
+    color: $second-color;
+  }
+
+  .mobile-topbar {
+    display: none;
+
+    h3 {
+      margin-top: 5px;
+      font-size: 25px;
+    }
+  }
+}
+
+.nav-icon {
+  display: inline-flex;
+  font-size: 18px;
+  border-left: solid 0.3px $border-color;
+  padding: 14px;
+  font-family: sans-serif;
+
+  i {
+    margin: 0 20px;
+  }
+}
+
+.nav-icon:hover {
+  cursor: pointer;
+  background-color: $button-color;
+  transition: 0.5s;
+}
+
+.header .mobile-icons {
+  display: none;
+}
+
+i.icon-arrow-right {
+  font-size: 23px;
+  padding: 10px;
+  cursor: pointer;
+  position: fixed;
+}
+
+i.icon-arrow-right.show-arrow {
+  display: block;
+  color: orange;
+  transition: 0.5s;
+  position: absolute;
+  z-index: 2;
+}
+
+i.icon-arrow-right.show-arrow:hover {
+  background-color: black;
+}

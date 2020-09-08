@@ -1,0 +1,66 @@
+.wrapper .sidebar {
+  width: 200px;
+  height: 100%;
+  background: $paragraph-color;
+  position: fixed;
+  padding-top: 10px;
+  transition: 0.5s;
+
+  .mobile_sidebar-icons {
+    display: none;
+  }
+
+  h3 {
+    color: white;
+    font-size: 30px;
+    font-family: $logo-font;
+  }
+
+  ul li {
+    padding: 15px;
+
+    a {
+      color: grey;
+      display: block;
+      font-family: $paragraph-font;
+    }
+  }
+}
+
+.wrapper .sidebar ul li:hover a {
+  color: white;
+  transition: 0.5s;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: space-around;
+  transition: 0.5s;
+
+  a {
+    color: white;
+    font-size: 27px;
+    transition: 0.5s;
+  }
+}
+
+.hamburger a:hover {
+  color: $button-color;
+  transition: 0.5s;
+}
+
+.sidebar li:hover {
+  background-color: $button-hover-color;
+  border-left: 4px solid $button-color;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.sidebar-screen.hide {
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.icon-arrow-right {
+  display: none;
+}
